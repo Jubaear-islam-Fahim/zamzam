@@ -1,0 +1,36 @@
+
+/* google fonts */
+@mixin primary-font {
+    font-family: 'Yantramanav', sans-serif;
+}
+
+/* background qu */
+@mixin bg-prs {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Font Awesome */
+@mixin icon-font{
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+/* Mask */
+@mixin mask-bg{
+    mask-mode: alpha; 
+    mask-size: contain; 
+    mask-position: center center; 
+    mask-repeat: no-repeat;
+}
+
+
+@mixin lg {
+    /* Large devices (desktops, 992px and up) */
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+

@@ -1,0 +1,88 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 26/08/2020 17:00
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-light-bulb:before { content: "\f100"; }
+.flaticon-plan:before { content: "\f101"; }
+.flaticon-testing:before { content: "\f102"; }
+.flaticon-start-up:before { content: "\f103"; }
+.flaticon-web-programming:before { content: "\f104"; }
+.flaticon-backlink:before { content: "\f105"; }
+.flaticon-monitor:before { content: "\f106"; }
+.flaticon-database-storage:before { content: "\f107"; }
+.flaticon-megaphone:before { content: "\f108"; }
+.flaticon-advertising:before { content: "\f109"; }
+.flaticon-pin:before { content: "\f10a"; }
+.flaticon-link:before { content: "\f10b"; }
+.flaticon-add:before { content: "\f10c"; }
+.flaticon-web:before { content: "\f10d"; }
+.flaticon-web-design:before { content: "\f10e"; }
+.flaticon-search:before { content: "\f10f"; }
+.flaticon-vector:before { content: "\f110"; }
+.flaticon-marketing:before { content: "\f111"; }
+.flaticon-loupe:before { content: "\f112"; }
+.flaticon-relation:before { content: "\f113"; }
+.flaticon-dynamic:before { content: "\f114"; }
+.flaticon-bank:before { content: "\f115"; }
+.flaticon-content:before { content: "\f116"; }
+.flaticon-marketing-1:before { content: "\f117"; }
+    
+    $font-Flaticon-light-bulb: "\f100";
+    $font-Flaticon-plan: "\f101";
+    $font-Flaticon-testing: "\f102";
+    $font-Flaticon-start-up: "\f103";
+    $font-Flaticon-web-programming: "\f104";
+    $font-Flaticon-backlink: "\f105";
+    $font-Flaticon-monitor: "\f106";
+    $font-Flaticon-database-storage: "\f107";
+    $font-Flaticon-megaphone: "\f108";
+    $font-Flaticon-advertising: "\f109";
+    $font-Flaticon-pin: "\f10a";
+    $font-Flaticon-link: "\f10b";
+    $font-Flaticon-add: "\f10c";
+    $font-Flaticon-web: "\f10d";
+    $font-Flaticon-web-design: "\f10e";
+    $font-Flaticon-search: "\f10f";
+    $font-Flaticon-vector: "\f110";
+    $font-Flaticon-marketing: "\f111";
+    $font-Flaticon-loupe: "\f112";
+    $font-Flaticon-relation: "\f113";
+    $font-Flaticon-dynamic: "\f114";
+    $font-Flaticon-bank: "\f115";
+    $font-Flaticon-content: "\f116";
+    $font-Flaticon-marketing-1: "\f117";

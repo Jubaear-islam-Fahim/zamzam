@@ -1,0 +1,249 @@
+/*  Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h4 {
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .single-feature {
+        padding: 31px 5px 6px;
+    }
+    .single-elements {
+        padding: 25px 5px 16px;
+    }
+    .elements-texts h5 {
+        font-size: 17px;
+    }
+    .testimonial-right-texts {
+        padding-left: 15px;
+    }
+    .testimonial-right-texts h4 {
+        font-size: 22px;
+    }
+}
+
+
+/*  Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .single-feature {
+        padding: 31px 40px 6px;
+    }
+}
+
+
+/*  Medium devices (tablets, 768px and up) */
+
+@media (max-width: 991.98px) {
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    .btn-1 {
+        padding: 10px 35px;
+        font-size: 25px;
+    }
+    br {
+        display: none;
+    }
+    .menu-button {
+        position: absolute;
+        top: 24px;
+        left: 62%;
+        transform: translateX(-50%);
+    }
+    .menu-button button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+    a.d-lg-none.navbar-brand {
+        margin-left: 25px;
+    }
+    .menu-area .navbar-expand-lg .navbar-nav .nav-link,
+    .menu-area .navbar-nav .nav-link {
+        padding: 10px 24px;
+        font-size: 18px;
+    }
+    .dropdown-menu {
+        padding: .5rem 25px;
+    }
+    .fonist-theme-area {
+        padding: 52px 0 82px;
+    }
+    .fonist-theme-single {
+        padding-top: 30px;
+    }
+    .fonist-theme-image-margin {
+        margin: 0;
+    }
+    .fonist-theme-image-text h3 {
+        padding-bottom: 0;
+    }
+    .section-title h1 {
+        padding-bottom: 5px;
+    }
+    .section-title h3 {
+        padding-top: 10px;
+    }
+    .service-child:nth-child(1) .single-fonist-service {
+        float: unset;
+    }
+    .service-child:nth-child(4) .single-fonist-service {
+        float: unset;
+    }
+    .filter-change {
+        padding: 35px 0 20px;
+    }
+    .introducing-demo {
+        padding: 78px 0 75px;
+    }
+    .fully-responsive-area {
+        padding: 0 0 78px;
+    }
+    .responsive-right-image {
+        display: none;
+    }
+    .responsive-border {
+        margin: 22px 0 29px;
+    }
+    .feature-areea {
+        background-color: #f4f8ff;
+        padding: 70px 0 83px;
+    }
+    .feature-texts h5 {
+        padding: 24px 0 11px;
+    }
+    .element-padding {
+        padding-top: 3px;
+    }
+    .elements-area {
+        padding: 70px 0 83px;
+    }
+    .testimonial-area {
+        padding: 70px 0 45px;
+    }
+    .together-all h4 {
+        padding: 30px 0 50px;
+    }
+}
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h5 {
+        font-size: 19px;
+    }
+    .fonist-theme-image-text h4 {
+        padding-top: 0;
+    }
+    .single-feature {
+        padding: 31px 10px 6px;
+    }
+    .responsive-right-all {
+        padding-top: 25px;
+    }
+    .single-elements {
+        padding: 25px 8px 16px;
+    }
+    .testimonial-slide {
+        margin-top: 30px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (min-width: 425px) and (max-width: 575.98px) {}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 70px;
+    }
+    .btn-1 {
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+    .menu-area {
+        padding: 16px 10px;
+    }
+    .filter-change button {
+        padding: 3px 8px;
+        font-size: 17px;
+        margin: 0 1px;
+    }
+    .introducing-links a {
+        font-size: 18px;
+    }
+    .responsive-right-all {
+        padding-top: 25px;
+    }
+    .responsive-right-image {
+        display: none;
+    }
+    .feature-texts h5 {
+        padding: 20px 0 10px;
+    }
+    .testimonial-slide {
+        margin-top: 30px;
+    }
+    .grid-2-phone { 
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (min-width: 320px) and (max-width: 424.98px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .section-title h3 {
+        padding-top: 0;
+    }
+    .menu-button {
+        display: none;
+    }
+    .filter-change button {
+        padding: 3px 4px;
+        font-size: 15px;
+        margin: 0;
+    }
+    .testimonial-right-texts {
+        padding-left: 10px;
+    }
+    .testimonial-right-inner h5 {
+        font-size: 17px;
+    }
+    .elements-texts h5 { 
+        font-size: 18px;
+    }
+    .single-elements { 
+        padding: 25px 6px 16px;
+    }
+    .fonist-service-text h3 {
+        line-height: 27px;
+    }
+}

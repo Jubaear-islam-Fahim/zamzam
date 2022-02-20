@@ -1,0 +1,273 @@
+
+/* 
+    Footer
+*/
+.footer-area{
+    background-color: $black;
+}
+.footer-content{}
+.footer-text{}
+.footer-text{
+    text-align: center;
+    padding: 230px 0 90px;
+    .footer-logo{}
+    p{
+        color: $white;
+        padding: 30px 0 50px;
+    }
+    .footer-social{
+        li{
+            display: inline-block;
+            margin: 0 5px;
+            &:nth-child(1){
+                a{
+                    color: $facebook;
+                    &:hover{
+                        background-color: $facebook;
+                        color: $white;
+                    }
+                }
+            }
+            &:nth-child(2){
+                a{
+                    color: $twitter;
+                    &:hover{
+                        background-color: $twitter;
+                        color: $white;
+                    }
+                }
+            }
+            &:nth-child(3){
+                a{
+                    color: $linkedin;
+                    &:hover{
+                        background-color: $linkedin;
+                        color: $white;
+                    }
+                }
+            }
+            &:nth-child(4){
+                a{
+                    color: $dribbble;
+                    &:hover{
+                        background-color: $dribbble;
+                        color: $white;
+                    }
+                }
+            }
+            &:nth-child(5){
+                a{
+                    color: $behance;
+                    &:hover{
+                        background-color: $behance;
+                        color: $white;
+                    }
+                }
+            }
+            &:nth-child(6){
+                a{
+                    color: $pinterest;
+                    &:hover{
+                        background-color: $pinterest;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        a{
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            background-color: $white;
+            display: inline-block;
+            position: relative;
+            transition: all .4s;
+            &:hover{
+                background-color: $green;
+            }
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            
+        }
+    }
+}
+
+.footer-copyright{
+    border-top: 1px solid $green;
+}
+.footer-copyright-content{
+    display: flex;
+    p{
+        color: $white;
+        display: inline-block;
+        align-self: center;
+        @include responsive(allPhone){
+            order: 1;
+            display: block;
+            padding: 25px 0;
+        }
+    }
+    .navbar{
+        margin-left: auto !important;
+        @include responsive(allPhone){
+            display: none;
+        }
+        ul{
+            li{
+                display: inline-block;
+               
+            }
+            a{
+                color: $white;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 400;
+                padding: 8px 10px;
+                display: inline-block;
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    Scroll top
+*/
+           
+.scroll-top {
+    position: fixed;
+    right: 3%;
+    bottom: -50px;
+    z-index: 111;
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+    display: block;
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 0px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    background-size: 200% auto;
+    background-position: left center;
+    color: $white;
+    -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    overflow: hidden; 
+    background-color: $primary-color;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+ 
+@media only screen and (max-width: 479px) {
+    .scroll-top {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+}
+
+.scroll-top.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 45px;
+}
+
+.scroll-top i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $white;
+    -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.scroll-top .arrow-top {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.scroll-top .arrow-bottom {
+    -webkit-transform: translate(-50%, 80px);
+    -ms-transform: translate(-50%, 80px);
+    transform: translate(-50%, 80px);
+}
+
+.scroll-top:hover {
+    background-position: right center;
+}
+
+.scroll-top:hover .arrow-top {
+    -webkit-transform: translate(-50%, -80px);
+    -ms-transform: translate(-50%, -80px);
+    transform: translate(-50%, -80px);
+}
+
+.scroll-top:hover .arrow-bottom {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fa-long-arrow-up:before {
+    content: "\f106";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+}
+
+
+
+/* Animation */
+.alltuchtopdown {
+    -webkit-animation: alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
+    animation: alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+  
+  @keyframes alltuchtopdown {
+    0% {
+        -webkit-transform: rotateX(0deg) translateY(0px);
+        -ms-transform: rotateX(0deg) translateY(0px);
+        transform: rotateX(0deg) translateY(0px);
+    }
+    50% {
+        -webkit-transform: rotateX(0deg) translateY(-10px);
+        -ms-transform: rotateX(0deg) translateY(-10px);
+        transform: rotateX(0deg) translateY(-10px);
+    }
+    100% {
+        -webkit-transform: rotateX(0deg) translateY(0px);
+        -ms-transform: rotateX(0deg) translateY(0px);
+        transform: rotateX(0deg) translateY(0px);
+    }
+  }

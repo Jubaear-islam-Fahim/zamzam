@@ -1,0 +1,13 @@
+#menuNav{
+    padding: 20px 0;
+    li{}
+    a{
+        font-size: 16px;
+        line-height: 0px; 
+        font-weight: 700;
+        color: $white;
+    }
+    .active{
+        color: $green;
+    }
+}

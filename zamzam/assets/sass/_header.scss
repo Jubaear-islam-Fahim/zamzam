@@ -1,0 +1,217 @@
+/* 
+    nav top 
+*/
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+.header-top{
+    padding: 10px 0;
+    border-bottom: 1px solid $blue;
+    @include responsive(xxss){
+        display: none;
+    }
+}
+
+.header-col{
+    align-self: center;
+}
+
+.header-address{
+    display: flex;
+    color: $white;
+    .address-blog{ 
+        margin-right: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+        &::before{
+            content: "\f3c5";
+            @include icon-font;
+            color: $green;
+        }
+    }
+    .phone-blog{ 
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+        &::before{
+            content: "\f879";
+            @include icon-font;
+            color: $green;
+        }
+    }
+}
+.header-socle{
+    float: right;
+    display: flex;
+    @include responsive(allPhone){
+        display: none;
+    }
+    .follow-txt{
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 30px;
+        align-self: center;
+        color: $white;
+    }
+    .socle-icon{
+        li{
+            display: inline-block; 
+            position: relative;
+            padding: 7px 0;
+            width: 43px;
+            &:after{ 
+                content:'';
+                position: absolute;
+                right: 0;
+                top:0;
+                width: 2px;
+                height: 100%;
+                background-image: linear-gradient(0deg, #746961 0%, #5cd901 50%, #6e6155 100%);
+            }
+        }
+        a{
+            font-size: 20px;
+            padding: 0 10px;
+            color: $green;
+            transition: all .3s;
+            
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}
+
+
+.navbar-rightLogo{
+    display: none;
+}
+
+
+
+#menuNav{
+    width: 100%;
+    transition: all .3s;
+    ul{
+        li{
+            a{
+                padding-left: 25px;
+            }
+        }
+    }
+    .navbar-brand{
+        @include responsive(allPhone){
+            width: 110px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#menuNav.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    padding: 10px 0;
+}
+
+@include responsive(allPhone){
+
+    .navbar-rightLogo{
+        display: block;
+    }
+    
+    .navbar-rightLogo {
+        margin-bottom: 25px;
+        display: block;
+        
+    }
+    #menuNav {
+        padding: 15px !important;
+        ul li a {
+            padding: 16px 0;
+            color: $black;
+        }
+    }
+
+     
+    .navbar-toggler {
+        border: 1px solid;
+        padding: 8px 11px;
+        span{
+            color: $white
+        }
+    }
+
+    #menuNav.sticky{
+        .navbar-toggler{
+            span{
+                color: $white
+            }
+        }
+    }
+
+    .offcanvas-active{
+        overflow:hidden;
+    }
+    
+    .screen-overlay {
+      width:0%;
+      height: 100%;
+      z-index: 30;
+      position: fixed;
+      top: 0;
+      left: 0;
+      opacity:0;
+      visibility:hidden;
+      background-color: rgba(34, 34, 34, 0.6);
+      transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+      cursor: url(https://codexexpert.com/TF-ITEM/demo-img/cursor-white.png), auto;
+    }
+    .screen-overlay.show {
+        transition:opacity .5s ease, width 0s;
+        opacity:1;
+        width:100%;
+        visibility:visible;
+    }
+    
+    .offcanvas{
+        width:250px;
+        visibility: hidden;
+        transform:translateX(-100%);
+        transition:all .2s;
+        border-radius:0; 
+        box-shadow: 0 5px 10px rgba(0,0,0, .2);
+        display:block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1200;
+        background-color: $white;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 40px 30px;
+    }
+    
+    .offcanvas.offcanvas-right {
+       right: 0;
+       left: auto;
+       transform: translateX(100%); 
+     }
+    
+    .offcanvas.show{
+        visibility: visible;
+        transform: translateX(0);
+        transition: transform .2s;
+    }
+    
+    .offcanvas .btn-close{ position: absolute; right:15px; top:15px; }
+    
+}
+
